@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #444; /* Darker border for contrast */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Slightly heavier shadow for contrast */
+  background: linear-gradient(135deg, #66b3ff 0%, #2f8fa7 100%); /* Gradient background */
+  color: #ffffff; /* White text color for contrast */
+  margin-top: 20px; /* Add margin to the top of the card */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Adjust translateY for hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adjust box-shadow for hover effect */
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 24px; /* Increase padding on all sides */
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 0;
+  color: #ffffff; /* White text color for headings */
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 12px 0; /* Adjust top and bottom margin */
+  color: #dddddd; /* Light grey for subtitle */
+}
+
+.description {
+  font-size: 1em;
+  margin: 20px 0; /* Adjust top and bottom margin */
+  color: #cccccc; /* Light grey for description */
+}
+
+.techStack {
+  display: flex;
+  justify-content: center; /* Center the tech icons */
+  flex-wrap: wrap;
+}
+
+.techItem {
+  margin: 8px; /* Increase margin between tech items */
+}
+
+.techIcon {
+  width: 32px;
+  height: 32px;
+}

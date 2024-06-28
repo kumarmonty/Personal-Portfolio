@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards */
+}
+
+.skillItem {
+  width: calc(50% - 10px); /* Cards in a group of two horizontally */
+  margin-bottom: 20px; /* Space between each row of cards */
+  background: linear-gradient(135deg, #66b3ff, #2f8fa7); /* Gradient background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for cards */
+  color: #fff; /* Text color */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skillItem:hover {
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Hover shadow */
+}
+
+@media (max-width: 768px) {
+  .skillItem {
+    width: 100%; /* Full width on smaller screens, stacking vertically */
+  }
+}
+
+.sectionTitle {
+  font-size: 1.5em;
+  color: #333; /* Adjust title color */
+  margin-bottom: 10px; /* Space below section titles */
+}
+
+.skillIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px; /* Space between icon and skill name */
+}
+
+.skillInfo {
+  display: flex;
+  align-items: center;
+}
+
+.skillName {
+  font-weight: bold;
+}
+
+.slider {
+  width: 80%; /* Adjust slider width */
+  margin-top: 10px; /* Space above the slider */
+}
