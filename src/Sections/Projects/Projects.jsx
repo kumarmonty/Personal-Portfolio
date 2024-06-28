@@ -12,8 +12,7 @@ const vOneTechIcons= [SiNextdotjs,SiGithubcopilot,FaReact,SiTailwindcss,SiShadcn
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1>Project edit Karna hai</h1>
-      <h1 className="sectionTitle">Projects</h1>
+      <h1 className="sectionTitle">MY NOTABLE Projects INCLUDE</h1>
       <div className={styles.projectsContainer}>
         <NewProjectCard
          images={[{ src: vOne, alt: 'vOneUi.dev Logo' }]}
@@ -21,7 +20,7 @@ function Projects() {
           title="vOneUI.dev"
           subtitle="A Generative user interface system "
           description="Developed a generative user interface system powered by AI.
-          Describe the envisioned UI in plain text to generate copy-paste friendly modular code for functional Web Interfaces, using open-source tools such as React,Tailwind CSS,and Shadcn UI"
+          Envision an UI, describe it in plain text, generate copy-paste friendly modular code for functional Web Interfaces, using open-source tools such as React,Tailwind CSS,and Shadcn UI"
           techStack={vOneTechIcons}
         />
         <NewProjectCard

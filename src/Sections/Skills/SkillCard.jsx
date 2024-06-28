@@ -22,8 +22,8 @@ import { SiCplusplus, SiJavascript, SiMysql, SiMongodb, SiNextdotjs, SiExpress} 
 
 const programmingLanguagesSkills = [
   { IconComponent: FaJava, skill: 'Java', level: 5 },
-  { IconComponent: SiCplusplus, skill: 'C++', level: 4 },
-  { IconComponent: FaPython, skill: 'Python', level: 5 },
+  { IconComponent: SiCplusplus, skill: 'C++', level: 2.5 },
+  { IconComponent: FaPython, skill: 'Python', level: 2.5 },
 ];
 
 const designDevelopmentSkills = [
@@ -48,13 +48,13 @@ const programmingParadigmsSkills = [
   { IconComponent: FaGitAlt, skill: 'Git', level: 4 },
 ];
 
-const softSkills = [
-  { IconComponent: FaLightbulb, skill: 'Problem Solving', level: 5 },
-  { IconComponent: FaComments, skill: 'Communication', level: 4 },
-  { IconComponent: FaUsers, skill: 'Team Player', level: 4 },
-  { IconComponent: FaChalkboardTeacher, skill: 'Leadership', level: 3 },
-  { IconComponent: FaBrain, skill: 'Critical Thinking', level: 3 },
-];
+// const softSkills = [
+//   { IconComponent: FaLightbulb, skill: 'Problem Solving', level: 5 },
+//   { IconComponent: FaComments, skill: 'Communication', level: 4 },
+//   { IconComponent: FaUsers, skill: 'Team Player', level: 4 },
+//   { IconComponent: FaChalkboardTeacher, skill: 'Leadership', level: 3 },
+//   { IconComponent: FaBrain, skill: 'Critical Thinking', level: 3 },
+// ];
 
 const SkillCard = () => {
   return (
@@ -79,10 +79,10 @@ const SkillCard = () => {
         {renderSkills(programmingParadigmsSkills)}
       </div>
       <hr />
-      <div>
+      {/* <div>
         <h2 className={styles.sectionTitle}>Soft Skills</h2>
         {renderSkills(softSkills)}
-      </div>
+      </div> */}
     </div>
   );
 };

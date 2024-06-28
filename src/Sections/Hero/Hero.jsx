@@ -36,7 +36,7 @@ function Hero(){
       </div>
         <div className={styles.info}>
             <h1> Monty <br /> Kumar </h1>
-              <h2> write your desc </h2>
+              <h2> | Results-Driven Software Developer | <br/> | Design & Development with React, Next.JS & Express | </h2>
                <span>
                 <a href="https://github.com/kumarmonty" target='_blank'> <img src={githubIcon} alt="github Icon" />
                 </a>
@@ -45,10 +45,12 @@ function Hero(){
                 <a href="https://x.com/MontyKu12417250" target='_blank'> <img src={twitterIcon} alt="Twitter Icon" />
                 </a>
                </span>
-               <p className={styles.description}> write a catchy line about yourself in hero section </p>
                <a href={CV} download>
                 <button className='hover'> Resume </button>
                  </a>
+
+                 <p className={styles.description}> I am a passionate full-stack web developer, driven to explore new technologies and levarage them to tackle real-world challenges innovatively. 
+                 </p>
         </div>
     </section>
   )
