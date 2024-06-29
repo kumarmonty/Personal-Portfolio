@@ -29,6 +29,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  max-width: 1200px; /* Set a max-width for the root container */
+  width: 100%; /* Ensure it takes full width */
+  padding: 0 20px; /* Add padding to the sides */
 }
 
 h1,
@@ -74,7 +77,7 @@ p {
   cursor: pointer;
 }
 
-@media (width >= 800px) {
+@media (min-width: 800px) {
   #root {
     gap: 100px;
   }
@@ -92,17 +95,105 @@ p {
   .sectionTitle {
     margin-bottom: 60px;
   }
+}
 
-  @media (width >= 1400px) {
-    #root {
-      gap: 200px;
-    }
-    h1 {
-      font-size: 48px;
-    }
+@media (min-width: 1400px) {
+  #root {
+    gap: 200px;
+  }
+  h1 {
+    font-size: 48px;
+  }
 
-    .sectionTitle {
-      margin-bottom: 75px;
-    }
+  .sectionTitle {
+    margin-bottom: 75px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Adjust the gap between cards */
+  padding: 10px; /* Add padding around the container */
+  margin: 0; /* Ensure no margin around the container */
+  list-style-type: none; /* Remove any default list styles */
+}
+
+.skillItem {
+  width: calc(50% - 10px); /* Cards in a group of two horizontally */
+  margin-bottom: 20px; /* Space between each row of cards */
+  background: linear-gradient(135deg, #66b3ff, #2f8fa7); /* Gradient background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for cards */
+  color: #fff; /* Text color */
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none; /* Ensure no border around cards */
+}
+
+.skillItem:hover {
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Hover shadow */
+}
+
+@media (max-width: 768px) {
+  .skillItem {
+    width: 100%; /* Full width on smaller screens, stacking vertically */
+    margin: 10px auto; /* Center align cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .skillItem {
+    width: 100%; /* Ensure full width minus gap for very small screens */
+    margin: 10px auto; /* Center align cards */
+  }
+}
+
+.sectionTitle {
+  font-size: 1.5em;
+  color: #4099c0; /* Adjust title color */
+  margin-bottom: 10px; /* Space below section titles */
+}
+
+.skillIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px; /* Space between icon and skill name */
+}
+
+.skillInfo {
+  display: flex;
+  align-items: center;
+}
+
+.skillName {
+  font-weight: bold;
+}
+
+.slider {
+  width: 80%; /* Adjust slider width */
+  margin-top: 10px; /* Space above the slider */
+}
+
+/* Additional CSS to center align on mobile devices */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #root {
+    align-items: center;
+    gap: 50px;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  .sectionTitle {
+    text-align: center; /* Center align text */
   }
 }

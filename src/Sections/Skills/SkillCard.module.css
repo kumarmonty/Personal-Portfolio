@@ -1,8 +1,9 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
   gap: 20px; /* Adjust the gap between cards */
-  padding: 0; /* Ensure no padding around the container */
+  padding: 10px; /* Add padding around the container */
   margin: 0; /* Ensure no margin around the container */
   list-style-type: none; /* Remove any default list styles */
 }
@@ -27,6 +28,7 @@
 @media (max-width: 768px) {
   .skillItem {
     width: 100%; /* Full width on smaller screens, stacking vertically */
+    margin: 10px auto; /* Center align cards */
   }
 }
 
