@@ -8,7 +8,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/cv.pdf';
+import MONTY_KUMAR_CV from "../../assets/MONTY_KUMAR_CV.pdf"
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero(){
@@ -45,7 +45,7 @@ function Hero(){
                 <a href="https://x.com/MontyKu12417250" target='_blank'> <img src={twitterIcon} alt="Twitter Icon" />
                 </a>
                </span>
-               <a href={CV} download>
+               <a href={MONTY_KUMAR_CV} download>
                 <button className='hover'> Resume </button>
                  </a>
 

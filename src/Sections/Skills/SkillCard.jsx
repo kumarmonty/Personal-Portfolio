@@ -78,7 +78,6 @@ const SkillCard = () => {
         <h2 className={styles.sectionTitle}>Programming Paradigms</h2>
         {renderSkills(programmingParadigmsSkills)}
       </div>
-      <hr />
       {/* <div>
         <h2 className={styles.sectionTitle}>Soft Skills</h2>
         {renderSkills(softSkills)}

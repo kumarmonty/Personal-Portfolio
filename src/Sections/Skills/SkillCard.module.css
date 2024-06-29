@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px; /* Adjust the gap between cards */
+  padding: 0; /* Ensure no padding around the container */
+  margin: 0; /* Ensure no margin around the container */
+  list-style-type: none; /* Remove any default list styles */
 }
 
 .skillItem {
@@ -13,6 +16,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for cards */
   color: #fff; /* Text color */
   transition: transform 0.3s, box-shadow 0.3s;
+  border: none; /* Ensure no border around cards */
 }
 
 .skillItem:hover {
@@ -51,5 +55,3 @@
   width: 80%; /* Adjust slider width */
   margin-top: 10px; /* Space above the slider */
 }
-
-
